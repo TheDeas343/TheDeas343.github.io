@@ -8,7 +8,7 @@ function Banner()  {
 
   return (
     <div className = "div-banner">
-      <section className="banner" id="home">
+      <section className="banner" >
         <section className ="content">
           <span className = "banner-text" >Hi! I'm Andreas Cisi </span>
           <h1 className="gradient-text">Software Developer</h1>

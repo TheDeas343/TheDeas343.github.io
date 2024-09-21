@@ -4,13 +4,18 @@
     display: flex;
    justify-content: center;
    padding: 20px;  
+   
+   
 }
 /*NavBar Deafult*/
 
 nav.navbar {
+  z-index: 1000;
   position: fixed;
   width: 90%;
+  max-width: 1400px;
   height: 6vw;
+  min-height: 75px;
   background-color:  rgb(29,29,29);
   max-height: 100px;
   display: flex;
@@ -18,7 +23,7 @@ nav.navbar {
   justify-content: flex-start;
   border-radius: 15px;
   padding: 0;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 5px solid rgba(0, 0, 0, 0.5);
   
 }
 
@@ -43,6 +48,8 @@ nav.navbar {
     display: flex;
     align-items: center;
     justify-content: flex-start; 
+    max-width: 1000px;
+    padding-right: 20px;
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -126,64 +133,42 @@ span.navbar-text {
 	filter: brightness(100) saturate(100%) sepia(7%) saturate(98%) hue-rotate(346deg) ;
 }
 
-/*DropDown*/
 
-#dropdown-menu.show .dropdown-toggle {
-    background-color: black;
-    color: white;
-}
-
-#dropdown-menu {
-    font-weight: 700;
-    height: 6vw;
-    max-height: 100px;
-    width: 10vw;
-    max-width: 200px;
-  
-    color: #ffffff ;
-    letter-spacing: 0.8px;
-    padding: 0 25px;
-    font-size: 20px;
-    opacity: 0.75;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-  
-    
-  
-}
-
-#dropdown-menu:hover{
-    opacity: 1;
-    font-weight: 700;
-    background: linear-gradient(45deg, #c900c9, #6f00af);
-
-    max-height: 100px;
-    transition:  0.2s ease-in-out;    
-}
-
-#dropdown-menu + div{
-    background-color: #000000 !important;
-}
-
-
-.dropdownItem {
-    
-    font-size: 25px;
-    color: #ffffff !important;
-    opacity: 0.75;
-    font-weight: bold;
-
-}
-
-.dropdownItem:hover {
-    background: linear-gradient(45deg, #c900c9, #6f00af);
-    opacity: 1;
-
+/* Ajustando o botão hamburguer para ser branco */
+.navbar .custom-toggler {
+    background:linear-gradient(45deg, #c900c9, #6f00af);
   }
+  
+  .navbar .custom-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+  
+  /* Estilo do menu colapsado */
+  .navbar-collapse {
+    background-color: transparent;
+    z-index: 1000;
+    height: auto;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 15px;
+}
+
+/* Mostra a navbar colapsada apenas em telas menores que 992px */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        position: absolute; 
+        width: 100%; 
+        top: 60px; 
+        left: 0; 
+        background-color:  rgb(29,29,29);
+        border-radius: 15px;
+        padding: 0;
+        border: 5px solid rgba(0, 0, 0, 0.5);
+    }
+}
+  
 
 
+  
   
 
