@@ -1,28 +1,77 @@
-
+import { useState, useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import 'animate.css';
 import "../styles/Banner.css"
 import fotoPerfil from "../assets/img/foto_perfil.png"
+import TrackVisibility from 'react-on-screen';
 
+function Banner() {
+  const [loopNum, setLoopNum] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [text, setText] = useState('');
+  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [index, setIndex] = useState(1);
+  const toRotate = [ "-Softaware Developer", "-Game Designer", "-Artist" ];
+  const period = 2000;
 
-function Banner()  {
- 
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, delta);
+
+    return () => { clearInterval(ticker) };
+  }, [text])
+
+  const tick = () => {
+    let i = loopNum % toRotate.length;
+    let fullText = toRotate[i];
+    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+
+    setText(updatedText);
+
+    if (isDeleting) {
+      setDelta(prevDelta => prevDelta / 2);
+    }
+
+    if (!isDeleting && updatedText === fullText) {
+      setIsDeleting(true);
+      setIndex(prevIndex => prevIndex - 1);
+      setDelta(period);
+    } else if (isDeleting && updatedText === '') {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setIndex(1);
+      setDelta(500);
+    } else {
+      setIndex(prevIndex => prevIndex + 1);
+    }
+  }
 
   return (
-    <div className = "div-banner">
-      <section className="banner" >
-        <section className ="content">
-          <span className = "banner-text" >Hi! I'm Andreas Cisi </span>
-          <h1 className="gradient-text">Software Developer</h1>
-          <span className = "banner-text">I'm a Computer Engineering student at Unicamp since 2021.</span>
-          <span className = "banner-text">I began my journey by participating in Mathematics and Physics Olympiads in high school, which sparked my fascination with exact sciences. Along with my drawing skills, the field of game development has always caught my attention, which is why I decided to pursue a degree in Computer Engineering.</span>
-        </section>
-        <div className = "div-foto">
-          <section className = "foto">
-            <img src= {fotoPerfil} alt="Minha Foto" />
-          </section>
-        </div>
+    <div className = "banner-div" id="home">
+        <section className="filtro" >
+      <div className = "banner">
+      <Container>
+        <Row className="aligh-items-center">
+          <Col xs={12} md={6} xl={7}>
+          <TrackVisibility>
+            {({ isVisible }) =>
+              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                <span className="tagline">Welcome to my Portfolio</span>
+                <h1>{`Hi! I'm Andreas\n`}</h1>
+                <h1><span className="txt-rotate" dataPeriod="1000" data-rotate= '[ "-Softaware Developer", "-Game Developer", "-Artist" ]'><span className="wrap">{text}</span> </span></h1>
+                  <p>Lorem Ipsum is simply.</p>
+              </div>}
+            </TrackVisibility>
+          </Col>
+          <Col xs={12} md={6} xl={12}>
+            
+          </Col>
+        </Row>
+        
+      </Container>
+      </div>
     </section>
-
-    
     </div>
   )
 }

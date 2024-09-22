@@ -1,80 +1,69 @@
 /*Content*/
-.div-banner{
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  padding-top: 100px; 
- 
 
+.banner-div{
+  padding-top: - 100px;
+ height: 100vh;
+}
+.banner {
+  height: 100vh;
+  margin-top: 0;
+  padding: 250px 0 200px 0;
+  display: flex;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.banner {
-    max-width: 1400px;
-    margin-top: 0;
-    width: 90%;
-    padding: 50px;
-    height: auto; /* Ajusta a altura para se adaptar ao conteúdo */
-    max-height: 800px;
-    padding: 40px 20px;
-    background-position: top center;
-    background-size: cover;
-    background-color: rgb(29, 29, 29);
-    border-radius: 35px;
+.filtro {
+  height: 100vh;
+  background-image: url('../assets/img/header-image.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner .tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.banner h1 {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+.banner p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
+.banner button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+}
+.banner button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+.banner button:hover svg {
+  margin-left: 25px;
+}
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    flex-wrap: wrap;
-    min-height: 300px; 
-
-  }
-
-  .content{
-    flex:1;
-    height: 100%;
-    width: 55%;
-    padding: 20px 40px;
-
-  }
- 
-  @keyframes smoothGradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-  .gradient-text {
-    font-weight: bold;
-    background: linear-gradient(45deg, #ff00b3, #c900c9, #5c0086);
-    background-size: 300% 300%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    animation: smoothGradient 5s ease infinite;
-
-    font-size: 55px;
-    font-weight: 700;
-
-    padding-top: 20px;
-  }
-  
-  .banner-text{
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    margin: 14px 0 75px 0;
-    opacity: 0.9;
-    
-    
-  }
 
   /*FOTO*/
   .div-foto{

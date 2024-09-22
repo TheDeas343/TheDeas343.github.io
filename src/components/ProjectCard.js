@@ -1,34 +1,51 @@
-import { Col, Row, Button } from 'react-bootstrap';
+import { Carousel, Button } from 'react-bootstrap';
+import "../styles/ProjectCard.css";
 
-export const ProjectCard = ({ title, description, imgUrl }) => {
+export const ProjectCard = ({ title, description, technologies, imgUrls, siteUrl, repoUrl }) => {
   return (
-    
-      <div className = "proj-div">
-        <section className="proj-card" >
+    <div className="proj-div">
+      <section className="proj-card">
 
-          <section className ="proj-image">
-            <div className="proj-image">
-                  <img src={imgUrl} alt={`${title} image`} />
-            </div>
-          </section>
+        <section className="proj-image">
+          <Carousel interval={null}>
+            {imgUrls.map((url, index) => (
+              <Carousel.Item key={index}>
+                <img className="rounded-img" src={url} alt={`Slide ${index + 1}`} />
+              </Carousel.Item>
+            ))}
+          </Carousel>
+        </section>
 
-          <div className = "proj-description">
-            <div className="proj-txtx">
-                  <h4>{title}</h4>
-                  <span>{description}</span>
-                </div>
-                <div className="proj-btns">
-                  <Button variant="primary" href="https://www.disneyplus.com/pt-br/play/25b25b2f-9f80-4ce4-9036-8e8691e8cf24?distributionPartner=google" target="_blank">
-                    Site
-                  </Button>
-                  <Button variant="secondary" href="" target="_blank">
-                    Repositório
-                  </Button>
-              </div>
+        <div className="proj-description">
+
+          <div className="proj-title">
+            <h4>{title}</h4>
           </div>
 
-        </section>
+       
+          <div className="proj-description-text">
+            <span>{description}</span>
+          </div>
+
+          <div className="proj-technologies">
+          <span>
+            <strong>Tecnologies:</strong> {technologies}
+           </span>
+          </div>
+
+          <div className = "div-button">
+            <div className="proj-btns">
+            <Button className="project-button white-btn" href={siteUrl} target="_blank">
+              View Project
+            </Button>
+            <Button className="repository-button black-btn" href={repoUrl} target="_blank">
+            <span>{"<Repository />"}</span>
+            </Button>
+          </div>
+          </div>
+
+        </div>
+      </section>
     </div>
-    
   );
 }

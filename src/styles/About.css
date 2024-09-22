@@ -3,9 +3,11 @@
   justify-content: center; 
   align-items: center; 
   padding-top: 40px; 
+  top: 20px;
 }
 
 .skill {
+  top: 20px;
   background: rgb(29,29,29);
   max-width: 1400px;
   width: 90%;

@@ -12,14 +12,15 @@ function NavBar() {
     <div className="div-nav">
       <Navbar expand="lg" className="navbar">
         <Container>
-          <Navbar.Brand href="#home" className="navbar-brand"></Navbar.Brand>
-          {/* Adicionando cor branca ao botão hamburguer */}
+        <Nav className="me-auto">
+                <Nav.Link href="#home" className='navbar-link'>Home</Nav.Link>
+
+            </Nav>
           <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler" />
           <Navbar.Collapse id="basic-navbar-nav">
             <div className="navbar-text-left">
               <Nav className="me-auto">
-                <Nav.Link href="#home" className='navbar-link'>Home</Nav.Link>
-                <Nav.Link href="#about" className='navbar-link'>Skills</Nav.Link>
+                <Nav.Link href="#about" className='navbar-link'>About</Nav.Link>
                 <Nav.Link href="#projects" className='navbar-link'>Projects</Nav.Link>
                 <Nav.Link href="#contact" className='navbar-link'>Contact</Nav.Link>
               </Nav>

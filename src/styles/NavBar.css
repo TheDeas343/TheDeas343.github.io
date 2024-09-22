@@ -3,8 +3,7 @@
 .div-nav{
     display: flex;
    justify-content: center;
-   padding: 20px;  
-   
+   z-index: 1000;
    
 }
 /*NavBar Deafult*/
@@ -14,7 +13,7 @@ nav.navbar {
   position: fixed;
   width: 90%;
   max-width: 1400px;
-  height: 6vw;
+  height: 4vw;
   min-height: 75px;
   background-color:  rgb(29,29,29);
   max-height: 100px;
@@ -23,8 +22,9 @@ nav.navbar {
   justify-content: flex-start;
   border-radius: 15px;
   padding: 0;
-  border: 5px solid rgba(0, 0, 0, 0.5);
-  
+
+  top: 20px;
+  box-shadow:  10px 10px 30px rgba(0, 0, 0, 1);
 }
 
 
@@ -54,7 +54,7 @@ nav.navbar {
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 700;
-  height: 6vw;
+  height: 5vw;
   max-height: 100px;
   width: 10vw;
   max-width: 200px;
@@ -94,8 +94,8 @@ span.navbar-text {
 }
 .social-icon a {
     opacity: 0.75;
-    height: 5vw;
-    width: 5vw;
+    height: 4vw;
+    width: 4vw;
     max-width: 70px;
     max-height: 70px;
     background: rgba(0, 0, 0, 0);
@@ -113,8 +113,8 @@ span.navbar-text {
 
 .social-icon a:hover {
     content: "";
-    height: 5vw;
-    width: 5vw;
+    height: 4vw;
+    width: 4vw;
     max-width: 70px;
     max-height: 70px;
     background: linear-gradient(45deg, #c900c9, #6f00af);
@@ -125,7 +125,7 @@ span.navbar-text {
 }
 
 .social-icon a img {
-	width: 60%;
+	width: 55%;
 	z-index: 1;
 	transition: 0.3s ease-in-out;
 }
