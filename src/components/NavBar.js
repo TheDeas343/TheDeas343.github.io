@@ -11,16 +11,16 @@ function NavBar() {
   return (
     <div className="div-nav">
       <Navbar expand="lg" className="navbar">
-        <Container>
-        <Nav className="me-auto">
+        <div className="pad"></div>
+        <Container >
+        <Nav className="me-auto-home">
                 <Nav.Link href="#home" className='navbar-link'>Home</Nav.Link>
-
-            </Nav>
+        </Nav>
           <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler" />
           <Navbar.Collapse id="basic-navbar-nav">
             <div className="navbar-text-left">
-              <Nav className="me-auto">
-                <Nav.Link href="#about" className='navbar-link'>About</Nav.Link>
+              <Nav className="me-auto-resto">
+                <Nav.Link href="#about" className='navbar-link'>About me</Nav.Link>
                 <Nav.Link href="#projects" className='navbar-link'>Projects</Nav.Link>
                 <Nav.Link href="#contact" className='navbar-link'>Contact</Nav.Link>
               </Nav>

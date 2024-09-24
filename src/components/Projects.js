@@ -6,7 +6,7 @@ import imgBase from "../assets/img/imgBase.jpg";
 import "../styles/Project.css";
 
 function Projects() {
-  const projects = [
+  const applications = [
     {
       title: "NASA SPACE APPS 2023 - GLOBAL WINNER",
       description: "My tem Greetings from Earth! foi um dos vencedores do maio hackathon do mundo com um projeto interativo utilizando dados da NASA, com componentes de interação como globos, slides, musica e jogo quiz",
@@ -35,7 +35,7 @@ function Projects() {
                 {({ isVisible }) => (
                   <div>
                     <h2>Projects</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p></p>
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                       <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                         <Nav.Item>
@@ -51,18 +51,30 @@ function Projects() {
                       <Tab.Content id="slideInUp">
                         <Tab.Pane eventKey="first">
                           <Row>
-                            {projects.map((project, index) => (
+                            {applications.map((card, index) => (
                               <Col key={index} sm={12} md={12}>
-                               <ProjectCard {...project} />
+                               <ProjectCard {...card} />
                               </Col>
                             ))}
                           </Row>
                         </Tab.Pane>
                         <Tab.Pane eventKey="second">
-                          <p>Some game development projects</p>
+                        <Row>
+                            {applications.map((card, index) => (
+                              <Col key={index} sm={12} md={12}>
+                               <ProjectCard {...card} />
+                              </Col>
+                            ))}
+                          </Row>
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">
-                          <p>Some drawings</p>
+                        <Row>
+                            {applications.map((card, index) => (
+                              <Col key={index} sm={12} md={12}>
+                               <ProjectCard {...card} />
+                              </Col>
+                            ))}
+                          </Row>
                         </Tab.Pane>
                       </Tab.Content>
                     </Tab.Container>

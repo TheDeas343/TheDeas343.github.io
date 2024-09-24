@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import 'animate.css';
 import "../styles/Banner.css"
-import fotoPerfil from "../assets/img/foto_perfil.png"
 import TrackVisibility from 'react-on-screen';
 
 function Banner() {
@@ -11,8 +10,8 @@ function Banner() {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "-Softaware Developer", "-Game Designer", "-Artist" ];
-  const period = 2000;
+  const toRotate = [ "Software Developer", "Game Designer", "Artist" ];
+  const period = 1300;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -52,22 +51,16 @@ function Banner() {
         <section className="filtro" >
       <div className = "banner">
       <Container>
-        <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
-          <TrackVisibility>
-            {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Andreas\n`}</h1>
-                <h1><span className="txt-rotate" dataPeriod="1000" data-rotate= '[ "-Softaware Developer", "-Game Developer", "-Artist" ]'><span className="wrap">{text}</span> </span></h1>
-                  <p>Lorem Ipsum is simply.</p>
-              </div>}
-            </TrackVisibility>
-          </Col>
-          <Col xs={12} md={6} xl={12}>
-            
-          </Col>
-        </Row>
+        
+      <TrackVisibility>
+        {({ isVisible }) =>
+          <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+            <span className="tagline">Welcome to my Portfolio</span>
+            <h1><span className="name"> {`Hi! I'm Andreas\n`}</span></h1>
+            <div className="rotate-div"><h1><span className="txt-rotate" dataPeriod="1000" data-rotate= '[ "Software Developer", "Game Developer", "Artist" ]'><span className="wrap">{text}</span> </span></h1></div>
+          </div>}
+        </TrackVisibility>
+          
         
       </Container>
       </div>

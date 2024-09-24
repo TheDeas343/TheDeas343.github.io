@@ -1,13 +1,12 @@
 /*Content*/
 
 .banner-div{
-  padding-top: - 100px;
  height: 100vh;
 }
 .banner {
   height: 100vh;
   margin-top: 0;
-  padding: 250px 0 200px 0;
+  padding: 300px 0 200px 0;
   display: flex;
   background-position: top center;
   background-size: cover;
@@ -19,16 +18,18 @@
   background-image: url('../assets/img/header-image.png');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 20% 45%;
 }
+
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: linear-gradient(45deg, #c900c9, #6f00af);;
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
+  box-shadow:  10px 10px 20px rgba(0, 0, 0, 0.8);
 }
 .banner h1 {
   font-size: 65px;
@@ -36,7 +37,6 @@
   letter-spacing: 0.8px;
   line-height: 1;
   margin-bottom: 20px;
-  display: block;
 }
 .banner p {
   color: #B8B8B8;
@@ -64,68 +64,32 @@
   margin-left: 25px;
 }
 
+.txt-rotate{
+  font-size: 100px;
+  background-image: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
 
-  /*FOTO*/
-  .div-foto{
-    height: 100%;
-    width: 45%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    
-  }
-  .foto {
+.name{
+  text-shadow: 10px 10px 20px rgba(0, 0, 0, 1); 
 
-    width: 90vw;
-    height: 70vw;
-    max-height: 350px;
-    max-width: 350px;
+}
 
-    min-height: 75px;
-    min-width: 75px;
+@media (max-width: 991px) {
 
-    border-radius: 50%;
-    overflow: hidden; 
-
-    background: linear-gradient(45deg, #ff00b3, #c900c9, #5c0086);
-    animation: smoothGradient 5s ease infinite;
-    background-size: 300% 300%;
-
-    display: flex;
-    justify-content: center; 
-    align-items: center;
+  .banner {
+    padding: 225px 0 200px 0;
+  
   }
   
-  .foto img {
-    width: 250%;
-    height: 250%;
-    object-fit: cover; 
-    border-radius: 50%; 
-    padding-bottom: 100px;
+  .rotate-div{
+    padding-top:100px;
   }
+  
 
-
-  /* Media Query para telas menores */
-@media (max-width: 800px) {
-  .banner{
-    height: auto; /* Ajusta a altura para se adaptar ao conteúdo */
-    max-height: 1000px;
-    padding: 40px 20px; /* Adiciona espaçamento extra */
-  }
-  .div-banner {
-    flex-direction: column; 
-    align-items: center;
-    
-  }
-  .content {
-    padding-right: 0;
-    margin-bottom: 20px; /* Adiciona um espaço entre o texto e a foto */
-    text-align: center; /* Centraliza o texto para melhor aparência */
-  }
-
-  .div-foto {
-    width: 100%;
-  }
 }
 
 

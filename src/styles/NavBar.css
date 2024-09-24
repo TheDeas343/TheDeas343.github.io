@@ -14,9 +14,9 @@ nav.navbar {
   width: 90%;
   max-width: 1400px;
   height: 4vw;
-  min-height: 75px;
+  min-height: 70px;
   background-color:  rgb(29,29,29);
-  max-height: 100px;
+  max-height: 75px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -29,6 +29,7 @@ nav.navbar {
 
 
 .navbar-text-left {
+    padding: -100px;
     margin-right: auto; 
     display: flex;
     align-items: center;
@@ -44,24 +45,33 @@ nav.navbar {
     align-items: center;
 }
 
-.me-auto {
+.pad{
+    padding-left: 20px;
+}
+.me-auto-home {
     display: flex;
     align-items: center;
     justify-content: flex-start; 
-    max-width: 1000px;
-    padding-right: 20px;
+}
+
+.me-auto-resto{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 700;
-  height: 5vw;
-  max-height: 100px;
-  width: 10vw;
-  max-width: 200px;
+  height: 4vw;
+  min-height: 70px;
+  max-height: 75px;
+  width: 14vw;
+  max-width: 170px;
+
 
   color: #ffffff ;
-  letter-spacing: 0.8px;
-  padding: 0 25px;
+  letter-spacing: 0.7px;
+  padding: 0 20px;
   font-size: 20px;
   opacity: 0.75;
 
@@ -96,9 +106,9 @@ span.navbar-text {
     opacity: 0.75;
     height: 4vw;
     width: 4vw;
-    max-width: 70px;
-    max-height: 70px;
-    background: rgba(0, 0, 0, 0);
+    max-width: 65px;
+    max-height: 65px;
+    background: rgba(173, 125, 125, 0);
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
@@ -106,17 +116,13 @@ span.navbar-text {
     justify-content: center;
 }
 
-.social-icon a:hover {
-    opacity: 1;
-    
-}
 
 .social-icon a:hover {
     content: "";
     height: 4vw;
     width: 4vw;
-    max-width: 70px;
-    max-height: 70px;
+    max-width: 65px;
+    max-height: 65px;
     background: linear-gradient(45deg, #c900c9, #6f00af);
     border-radius: 50%;
     transform: scale(1);
@@ -133,38 +139,126 @@ span.navbar-text {
 	filter: brightness(100) saturate(100%) sepia(7%) saturate(98%) hue-rotate(346deg) ;
 }
 
+.navbar-toggler {
+    border: 2px rgb(255, 255, 255, 0.8) ;
+    padding: 5px;
+}
+.navbar-toggler:hover {
+    background: linear-gradient(45deg, #c900c9, #6f00af); 
+}
 
-/* Ajustando o botão hamburguer para ser branco */
-.navbar .custom-toggler {
-    background:linear-gradient(45deg, #c900c9, #6f00af);
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
   
-  .navbar .custom-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-  
-  /* Estilo do menu colapsado */
-  .navbar-collapse {
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(255, 255, 255, 0.8);
+  } 
+
+
+.navbar-collapse {
+    
     background-color: transparent;
     z-index: 1000;
     height: auto;
     align-items: center;
-    justify-content: flex-start;
+    justify-content:flex-end;
     border-radius: 15px;
 }
 
-/* Mostra a navbar colapsada apenas em telas menores que 992px */
+
 @media (max-width: 991px) {
     .navbar-collapse {
+        padding-bottom: 10px;
+        right:0;
         position: absolute; 
-        width: 100%; 
-        top: 60px; 
-        left: 0; 
+        width: 60%; 
+        top: 55px; 
+
         background-color:  rgb(29,29,29);
         border-radius: 15px;
-        padding: 0;
-        border: 5px solid rgba(0, 0, 0, 0.5);
+        box-shadow:  10px 10px 30px rgba(0, 0, 0, 1);
+
+        align-items: center;
+        justify-content:center;
+        align-content: center;
     }
+
+    .me-auto-resto {
+        width: 100%;
+        display: flex;
+        justify-content: center; 
+        align-items: center;  
+    }
+
+    nav.navbar .navbar-nav .nav-link.navbar-link {
+        
+        font-weight: 700;
+        height: 4vw;
+        min-height: 65px;
+        max-height: 100px;
+
+        min-width: 175px;
+        width: 100%; 
+        max-width: 5000px;
+      
+      
+        color: #ffffff ;
+        letter-spacing: 0.7px;
+        font-size: 20px;
+        opacity: 0.75;
+      
+        
+    }
+    nav.navbar  .nav-link.navbar-link:hover{
+        opacity: 1;
+        font-weight: 700;
+        background-size: 200%;
+        background: linear-gradient(45deg, #c900c9, #6f00af);
+        color: white;  
+        
+    }
+
+    
+
+    .navbar-text-right  {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;  
+        align-content: center;
+    }
+
+    .social-icon{
+        width: 100%;
+        display: flex;
+        justify-content: center; 
+        align-items: center;    
+        gap: 15px; 
+    }
+    .social-icon a{
+        width: 12vw;
+        height:12vw;
+    }
+
+    
+    .social-icon a:hover {
+        
+        content: "";
+        height: 12vw;
+        width: 12vw;
+        background: linear-gradient(45deg, #c900c9, #6f00af);
+        border-radius: 50%;
+
+        opacity: 1;
+    }
+    
+    .social-icon a img {
+        width: 55%;
+        z-index: 1;
+        transition: 0.3s ease-in-out;
+    }
+    
 }
   
 
