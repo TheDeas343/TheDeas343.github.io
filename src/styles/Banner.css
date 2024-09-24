@@ -14,11 +14,11 @@
 }
 
 .filtro {
-  height: 100vh;
-  background-image: url('../assets/img/header-image.png');
+  height: 120vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%), url('../assets/img/header-image.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 20% 45%;
+  background-position: 30% 50%;
 }
 
 .banner .tagline {
@@ -73,23 +73,26 @@
   color: transparent;
 }
 
-.name{
+.name-banner{
   text-shadow: 10px 10px 20px rgba(0, 0, 0, 1); 
 
 }
 
+.rotate-div{
+  padding-top:30px;
+}
+
+
 @media (max-width: 991px) {
 
   .banner {
-    padding: 225px 0 200px 0;
+    padding: 250px 0 200px 0;
   
   }
   
   .rotate-div{
-    padding-top:100px;
+    padding-top:130px;
   }
-  
-
 }
 
 

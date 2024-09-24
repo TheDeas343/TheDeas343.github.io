@@ -56,7 +56,7 @@ function Banner() {
         {({ isVisible }) =>
           <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
             <span className="tagline">Welcome to my Portfolio</span>
-            <h1><span className="name"> {`Hi! I'm Andreas\n`}</span></h1>
+            <h1><span className="name-banner"> {`Hi! I'm Andreas\n`}</span></h1>
             <div className="rotate-div"><h1><span className="txt-rotate" dataPeriod="1000" data-rotate= '[ "Software Developer", "Game Developer", "Artist" ]'><span className="wrap">{text}</span> </span></h1></div>
           </div>}
         </TrackVisibility>
