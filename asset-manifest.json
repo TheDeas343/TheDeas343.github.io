@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/TheDeas343/static/css/main.9e823369.css",
-    "main.js": "/TheDeas343/static/js/main.bab3ae7c.js",
-    "static/js/453.b047d878.chunk.js": "/TheDeas343/static/js/453.b047d878.chunk.js",
-    "static/media/03.png": "/TheDeas343/static/media/03.6c3e8940b8a1f0348d52.png",
-    "static/media/01.png": "/TheDeas343/static/media/01.0666e5f8adf0f2bd5546.png",
-    "static/media/02.png": "/TheDeas343/static/media/02.5ce32d7d922aa588cc1b.png",
-    "static/media/my-photo.jpg": "/TheDeas343/static/media/my-photo.5784fbf27708717301bb.jpg",
-    "static/media/header-image.png": "/TheDeas343/static/media/header-image.3e31031a427063d1a232.png",
-    "static/media/05.png": "/TheDeas343/static/media/05.44058b60d8c02fa9a335.png",
-    "static/media/imgBase.jpg": "/TheDeas343/static/media/imgBase.111f6e16aa594e6aa4d6.jpg",
-    "static/media/04.png": "/TheDeas343/static/media/04.b7f733044880c3c644d9.png",
-    "static/media/github_logo.svg": "/TheDeas343/static/media/github_logo.147e3ee0970a4e3849b542783d5d8483.svg",
-    "static/media/itchio_logo.svg": "/TheDeas343/static/media/itchio_logo.f1f79606155fb1e984913988db713704.svg",
-    "static/media/instagram_logo.svg": "/TheDeas343/static/media/instagram_logo.86ea67b583697d582d0ace03c32c76d8.svg",
-    "index.html": "/TheDeas343/index.html",
-    "static/media/linkedin_logo.svg": "/TheDeas343/static/media/linkedin_logo.79cf5343a76177ffdab3aaa1c69dce53.svg",
-    "main.9e823369.css.map": "/TheDeas343/static/css/main.9e823369.css.map",
-    "main.bab3ae7c.js.map": "/TheDeas343/static/js/main.bab3ae7c.js.map",
-    "453.b047d878.chunk.js.map": "/TheDeas343/static/js/453.b047d878.chunk.js.map"
+    "main.css": "/static/css/main.0fdcc5d6.css",
+    "main.js": "/static/js/main.17a23029.js",
+    "static/js/453.965c5e9a.chunk.js": "/static/js/453.965c5e9a.chunk.js",
+    "static/media/03.png": "/static/media/03.6c3e8940b8a1f0348d52.png",
+    "static/media/01.png": "/static/media/01.0666e5f8adf0f2bd5546.png",
+    "static/media/02.png": "/static/media/02.5ce32d7d922aa588cc1b.png",
+    "static/media/my-photo.jpg": "/static/media/my-photo.5784fbf27708717301bb.jpg",
+    "static/media/header-image.png": "/static/media/header-image.3e31031a427063d1a232.png",
+    "static/media/05.png": "/static/media/05.44058b60d8c02fa9a335.png",
+    "static/media/imgBase.jpg": "/static/media/imgBase.111f6e16aa594e6aa4d6.jpg",
+    "static/media/04.png": "/static/media/04.b7f733044880c3c644d9.png",
+    "static/media/github_logo.svg": "/static/media/github_logo.147e3ee0970a4e3849b542783d5d8483.svg",
+    "static/media/itchio_logo.svg": "/static/media/itchio_logo.f1f79606155fb1e984913988db713704.svg",
+    "static/media/instagram_logo.svg": "/static/media/instagram_logo.86ea67b583697d582d0ace03c32c76d8.svg",
+    "static/media/linkedin_logo.svg": "/static/media/linkedin_logo.79cf5343a76177ffdab3aaa1c69dce53.svg",
+    "index.html": "/index.html",
+    "main.0fdcc5d6.css.map": "/static/css/main.0fdcc5d6.css.map",
+    "main.17a23029.js.map": "/static/js/main.17a23029.js.map",
+    "453.965c5e9a.chunk.js.map": "/static/js/453.965c5e9a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e823369.css",
-    "static/js/main.bab3ae7c.js"
+    "static/css/main.0fdcc5d6.css",
+    "static/js/main.17a23029.js"
   ]
 }
