@@ -29,7 +29,7 @@ export const ProjectCard = ({ title, description, technologies, imgUrls, siteUrl
 
           <div className="proj-technologies">
           <span>
-            <strong>Tecnologies:</strong> {technologies}
+            <strong>Tools:</strong> {technologies}
            </span>
           </div>
 

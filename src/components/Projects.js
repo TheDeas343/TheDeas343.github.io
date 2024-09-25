@@ -50,6 +50,7 @@ function Projects() {
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">
                           <Row>
+                            <h1> Coming soon: This section is still under development. Stay tuned!</h1>
                             {drawings.map((card, index) => (
                               <Col key={index} sm={12} md={12}>
                                <ProjectCard {...card} />

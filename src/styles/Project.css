@@ -19,6 +19,13 @@
   border-radius: 35px;
 }
 
+.project h1 {
+	font-size: 30px;
+	font-weight: 700;
+  text-align: center;
+  color: rgb(255 255 255 / 80%);
+}
+
 .project h2 {
 	font-size: 45px;
 	font-weight: 700;
