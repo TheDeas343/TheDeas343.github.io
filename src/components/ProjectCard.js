@@ -39,7 +39,7 @@ export const ProjectCard = ({ title, description, technologies, imgUrls, siteUrl
               View Project
             </Button>
             <Button className="repository-button black-btn" href={repoUrl} target="_blank">
-            <span>{"<Repository />"}</span>
+            <span>{"< Repository />"}</span>
             </Button>
           </div>
           </div>

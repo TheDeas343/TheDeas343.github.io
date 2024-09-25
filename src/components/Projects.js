@@ -2,29 +2,10 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import imgBase from "../assets/img/imgBase.jpg";
+import { applications, games, drawings } from "../data/projectsData"; // Atualize o caminho conforme necessário
 import "../styles/Project.css";
 
 function Projects() {
-  const applications = [
-    {
-      title: "NASA SPACE APPS 2023 - GLOBAL WINNER",
-      description: "My tem Greetings from Earth! foi um dos vencedores do maio hackathon do mundo com um projeto interativo utilizando dados da NASA, com componentes de interação como globos, slides, musica e jogo quiz",
-      technologies: "React, CSS, Unity, WebGL",
-      imgUrls: [imgBase],  // Passando imgUrls como um array
-      siteUrl: "https://www.google.com/search?q=superbad",
-      repoUrl: "https://www.google.com/search?q=superbad"
-    },
-    {
-      title: "Another Project",
-      description: "Another project description",
-      technologies: "React",
-      imgUrls: [imgBase, imgBase],  // Agora com múltiplas imagens
-      siteUrl: "https://www.google.com/search?q=superbad",
-      repoUrl: "https://www.google.com/search?q=superbad"
-    },
-  ];
-
   return (
     <div className="div-projects" id="projects">
       <section className="project">
@@ -59,8 +40,8 @@ function Projects() {
                           </Row>
                         </Tab.Pane>
                         <Tab.Pane eventKey="second">
-                        <Row>
-                            {applications.map((card, index) => (
+                          <Row>
+                            {games.map((card, index) => (
                               <Col key={index} sm={12} md={12}>
                                <ProjectCard {...card} />
                               </Col>
@@ -68,8 +49,8 @@ function Projects() {
                           </Row>
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">
-                        <Row>
-                            {applications.map((card, index) => (
+                          <Row>
+                            {drawings.map((card, index) => (
                               <Col key={index} sm={12} md={12}>
                                <ProjectCard {...card} />
                               </Col>
