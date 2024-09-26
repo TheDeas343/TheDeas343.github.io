@@ -79,6 +79,8 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   align-items: center;
   justify-content: center;
   
+  transition: 0.3s ease-in-out;
+
 }
 nav.navbar  .nav-link.navbar-link:hover{
     opacity: 1;
@@ -86,9 +88,7 @@ nav.navbar  .nav-link.navbar-link:hover{
     background-size: 200%;
     background: linear-gradient(45deg, #c900c9, #6f00af);
     color: white;
-    transition: background-color 0.32s ease-in-out;
-    
-
+    transition: 0.3s ease-in-out;
 }
 
 /*ICONS*/
@@ -137,6 +137,8 @@ span.navbar-text {
 }
 .social-icon a:hover img {
 	filter: brightness(100) saturate(100%) sepia(7%) saturate(98%) hue-rotate(346deg) ;
+    transition: 0.3s ease-in-out;
+
 }
 
 .navbar-toggler {
@@ -145,6 +147,8 @@ span.navbar-text {
 }
 .navbar-toggler:hover {
     background: linear-gradient(45deg, #c900c9, #6f00af); 
+    transition: 0.3s ease-in-out;
+
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -216,6 +220,7 @@ span.navbar-text {
         background-size: 200%;
         background: linear-gradient(45deg, #c900c9, #6f00af);
         color: white;  
+        transition: 0.3s ease-in-out;
         
     }
 
@@ -251,7 +256,10 @@ span.navbar-text {
         border-radius: 50%;
 
         opacity: 1;
+    transition: 0.3s ease-in-out;
+
     }
+
     
     .social-icon a img {
         width: 55%;

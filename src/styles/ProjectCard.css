@@ -93,6 +93,8 @@
 
 .black-btn:hover {
     background-image: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%) !important;
+    transition: 0.3s ease-in-out;
+
 }
 
 .white-btn {
@@ -103,6 +105,7 @@
 .white-btn:hover {
     background-image: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%) !important;
     color: white !important;
+    transition: 0.3s ease-in-out;
 }
 
 

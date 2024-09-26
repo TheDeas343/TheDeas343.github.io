@@ -1,6 +1,3 @@
-import imgBase from "../assets/img/imgBase.jpg"; 
-
-
 const app01 = require.context('../assets/projects/app01-nasa', false, /\.(png|jpe?g|svg)$/);
 const app02 = require.context('../assets/projects/app02-portfolio', false, /\.(png|jpe?g|svg)$/);
 const app03 = require.context('../assets/projects/app03-patronos', false, /\.(png|jpe?g|svg)$/);
@@ -55,8 +52,8 @@ export const games = [
     description: "I'm creating a modified Chess RPG where  playing chess isn't the hardest part. Players must not only play chess but also stay alive, use special rule-altering cards, and incorporate RPG-style dice mechanics. The game will feature a 1v1 multiplayer mode and a player vs bot mode ",
     technologies: "Unity, C#, LibreSprite",
     imgUrls: game03Images,
-    siteUrl: "https://github.com/TheDeas343/Double-King",
-    repoUrl: "https://github.com/TheDeas343/Double-King",
+    siteUrl: "https://github.com/TheDeas343/Double-King/tree/develop",
+    repoUrl: "https://github.com/TheDeas343/Double-King/tree/develop",
   },
   {
     title: "BLOONS TOWER OFFENSE",

@@ -91,11 +91,13 @@
   border-radius: 5px !important;
   text-decoration: none !important;
   box-shadow:  10px 10px 30px rgba(0, 0, 0, 1) !important;
+  transition: 0.3s ease-in-out;
 }
 
 .contact-button:hover {
-  background: linear-gradient(45deg, #c900c9, #6f00af);;
+  background: linear-gradient(45deg, #c900c9, #6f00af);
   color: white !important;
+  transition: 0.3s ease-in-out;
 }
 
 .name-about {
