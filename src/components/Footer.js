@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import signature from "../assets/img/linkedin_logo.svg";
+import { SiGithubpages } from "react-icons/si";
 import linkedin from '../assets/img/linkedin_logo.svg';
 import instagram from '../assets/img/instagram_logo.svg';
 import itchio from '../assets/img/itchio_logo.svg';
@@ -13,7 +13,7 @@ function Footer(){
       <Container>
         <Row className="align-items-center">
           <Col size={12} sm={6}>
-            <img src={signature} alt="Logo" />
+            <SiGithubpages style={{ fontSize: '200px' }} />
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">

@@ -96,16 +96,10 @@ function Contact() {
                                             placeholder="Message"
                                             onChange={(e) => onFormUpdate('message', e.target.value)}
                                         ></textarea>
+                                        {status.message && (<p className={`status-message ${status.success ? 'success' : 'danger'}`}>{status.message}</p>)}
+
                                         <button type="submit"><span>{buttonText}</span></button>
-                                    </Col>
-                                    {
-                                        status.message &&
-                                        <Col>
-                                            <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
                                         </Col>
-                                    }
-
-
                                 </Row>
                             </form>
                         </Col>

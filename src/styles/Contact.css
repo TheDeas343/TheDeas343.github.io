@@ -89,3 +89,22 @@
     color: white !important;
     transition: 0.3s ease-in-out;
   }
+
+.status-message {
+  margin-top: 10px; 
+  font-size: 14px; 
+  color: #fff; 
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.status-message.success {
+  background-color: #4caf50; 
+  color: #003302;
+}
+
+.status-message.danger {
+  background-color: #f44336; 
+  color: #360400; 
+}

@@ -61,14 +61,14 @@ export const games = [
     technologies: "Unity, C#, LibreSprite",
     imgUrls: game01Images,
     siteUrl: "https://the-deas.itch.io/bloonstoweroffense",
-    repoUrl: "https://the-deas.itch.io/bloonstoweroffense",
+    repoUrl: "https://github.com/TheDeas343/BloonsTowerOffense",
   },
   {
     title: "DEATH GOD",
     description: "Mini game created to be part of 'Gamutoware', a collection of short, simple, and creative open-source minigames developed by various contributors. I forked the repository, added my game, and after submitting a Merge Request, it was successfully merged into the project. Now, my game is officially part of Gamutoware, alongside many other unique minigames. The game is a macabre mini game where you control the god of death and take the lives of your followers.",
     technologies: "Godot, GDScript, LibreSprite",
     imgUrls: game02Images,
-    siteUrl: "https://the-deas.itch.io/bloonstoweroffense",
+    siteUrl: "https://moraguma.itch.io/gamutoware",
     repoUrl: "https://github.com/moraguma/GamutoWare/tree/master/microjogos/2023S1/projeto-thedeas",
   },
 
