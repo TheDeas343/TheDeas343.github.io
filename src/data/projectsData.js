@@ -75,7 +75,7 @@ export const games = [
   },
   {
     title: "DEATH GOD",
-    description: "Mini game created to be part of 'Gamutoware', a collection of short, simple, and creative open-source minigames developed by various contributors. I forked the repository, added my game, and after submitting a Merge Request, it was successfully merged into the project. Now, my game is officially part of Gamutoware, alongside many other unique minigames. The game is a macabre mini game where you control the god of death and take the lives of your followers.",
+    description: "Mini game I created to be part of 'Gamutoware', a collection of short, simple, and creative open-source minigames developed by various contributors. I forked the repository, added my game, and after submitting a Merge Request, it was successfully merged into the project. Now, my game is officially part of Gamutoware, alongside many other unique minigames. The game is a macabre mini game where you control the god of death and take the lives of your followers.",
     technologies: "Godot, GDScript, LibreSprite",
     imgUrls: game02Images,
     siteUrl: "https://moraguma.itch.io/gamutoware",
