@@ -17,7 +17,9 @@ jobs:
         run: npm install
 
       - name: Build site
-        run: npm run build
+        run: |
+           unset CI
+           npm run build
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v3
