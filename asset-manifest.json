@@ -1,27 +1,42 @@
 {
   "files": {
-    "main.css": "/static/css/main.1e50d091.css",
-    "main.js": "/static/js/main.3e3c32a8.js",
-    "static/js/453.965c5e9a.chunk.js": "/static/js/453.965c5e9a.chunk.js",
+    "main.css": "/static/css/main.688f2d01.css",
+    "main.js": "/static/js/main.1574b1bc.js",
+    "static/js/453.81587a87.chunk.js": "/static/js/453.81587a87.chunk.js",
+    "static/media/Conny-TPNL.png": "/static/media/Conny-TPNL.cdf9be1f3d9c68002407.png",
+    "static/media/Personagens.png": "/static/media/Personagens.8d8a87b3d11ff3148f97.png",
+    "static/media/Menina.png": "/static/media/Menina.aec00bab74bcac845d90.png",
+    "static/media/ZALIA_FINAL.png": "/static/media/ZALIA_FINAL.b5597e636e37f2e4eca5.png",
+    "static/media/KIBIYA.png": "/static/media/KIBIYA.9153a42c80d4b30eb571.png",
+    "static/media/Nyama.png": "/static/media/Nyama.37f7e3a031ee3b9ad933.png",
     "static/media/03.png": "/static/media/03.6c3e8940b8a1f0348d52.png",
-    "static/media/00.png": "/static/media/00.56aa170e6ee751e84521.png",
     "static/media/01.png": "/static/media/01.bc7f768cba0781df0020.png",
     "static/media/02.png": "/static/media/02.ff2f4afe57913677933e.png",
     "static/media/my-photo.jpg": "/static/media/my-photo.5784fbf27708717301bb.jpg",
+    "static/media/00.png": "/static/media/00.56aa170e6ee751e84521.png",
     "static/media/header-image.png": "/static/media/header-image.3e31031a427063d1a232.png",
+    "static/media/14.png": "/static/media/14.e99750177e9f6f215702.png",
+    "static/media/03.jpeg": "/static/media/03.27bab8ce22a38a9608de.jpeg",
+    "static/media/01.jpeg": "/static/media/01.555641a068f6ae1eb813.jpeg",
+    "static/media/Nyama1.png": "/static/media/Nyama1.84b12aa286b752b53acf.png",
+    "static/media/02.jpeg": "/static/media/02.6c56ee768dc75ed4a85e.jpeg",
     "static/media/05.png": "/static/media/05.44058b60d8c02fa9a335.png",
+    "static/media/00.jpeg": "/static/media/00.395b4ec5c6f5cb4ef7d1.jpeg",
+    "static/media/OK.png": "/static/media/OK.f08d220b31ad66817359.png",
     "static/media/04.png": "/static/media/04.b7f733044880c3c644d9.png",
+    "static/media/04.jpeg": "/static/media/04.c3cfad3dbaa8d8b34eb8.jpeg",
+    "static/media/Pom-Pom.png": "/static/media/Pom-Pom.75864bfbad47d8e51487.png",
     "static/media/github_logo.svg": "/static/media/github_logo.147e3ee0970a4e3849b542783d5d8483.svg",
     "static/media/itchio_logo.svg": "/static/media/itchio_logo.f1f79606155fb1e984913988db713704.svg",
     "static/media/instagram_logo.svg": "/static/media/instagram_logo.86ea67b583697d582d0ace03c32c76d8.svg",
     "static/media/linkedin_logo.svg": "/static/media/linkedin_logo.79cf5343a76177ffdab3aaa1c69dce53.svg",
     "index.html": "/index.html",
-    "main.1e50d091.css.map": "/static/css/main.1e50d091.css.map",
-    "main.3e3c32a8.js.map": "/static/js/main.3e3c32a8.js.map",
-    "453.965c5e9a.chunk.js.map": "/static/js/453.965c5e9a.chunk.js.map"
+    "main.688f2d01.css.map": "/static/css/main.688f2d01.css.map",
+    "main.1574b1bc.js.map": "/static/js/main.1574b1bc.js.map",
+    "453.81587a87.chunk.js.map": "/static/js/453.81587a87.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e50d091.css",
-    "static/js/main.3e3c32a8.js"
+    "static/css/main.688f2d01.css",
+    "static/js/main.1574b1bc.js"
   ]
 }
