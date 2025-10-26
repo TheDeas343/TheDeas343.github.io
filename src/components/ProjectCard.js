@@ -6,6 +6,10 @@ export const ProjectCard = ({ title, description, technologies, imgUrls, siteUrl
     <div className="proj-div">
       <section className="proj-card">
 
+        <div className="proj-title">
+          <h4>{title}</h4>
+        </div>
+
         <section className="proj-image">
           <Carousel interval={null}>
             {imgUrls.map((url, index) => (
@@ -17,33 +21,24 @@ export const ProjectCard = ({ title, description, technologies, imgUrls, siteUrl
         </section>
 
         <div className="proj-description">
-
-          <div className="proj-title">
-            <h4>{title}</h4>
-          </div>
-
-       
           <div className="proj-description-text">
             <span>{description}</span>
           </div>
 
           <div className="proj-technologies">
-          <span>
-            <strong>Tools:</strong> {technologies}
-           </span>
+            <span>
+              <strong>Tools:</strong> {technologies}
+            </span>
           </div>
 
-          <div className = "div-button">
-            <div className="proj-btns">
+          <div className="proj-btns">
             <Button className="project-button white-btn" href={siteUrl} target="_blank">
               View Project
             </Button>
             <Button className="repository-button black-btn" href={repoUrl} target="_blank">
-            <span>{"< Repository />"}</span>
+              <span>{"< Repository />"}</span>
             </Button>
           </div>
-          </div>
-
         </div>
       </section>
     </div>

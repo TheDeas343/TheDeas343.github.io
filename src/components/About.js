@@ -30,7 +30,8 @@ function About() {
           <div className="about-bx">
             <h2>About me</h2>
             <span className="name-about">Andreas Cisi Ramos ({age})</span>
-            <span> Bachelor's Degree in Computer Engineering at UNICAMP (2021-2025)</span>
+            <span className="current-role">Software Developer Engineer at Amazon</span>
+            <span> Bachelor's Degree in Computer Engineering and Computer Science at UNICAMP (2021-2025)</span>
             <p>My journey in computing began with a fascination for the exact sciences, which led me to participate in and win multiple medals in academic Olympiads. From an early age, my curiosity and passion for computers and games guided me toward the world of technology. I aim to combine my technical skills and years of experience with my creativity, imagination, and artistic abilities to solve problems, create applications and games, and enjoy the process along the way. </p>             
             <Nav>
               <Nav.Link href="#contact" className="contact-button">Contact Me</Nav.Link>

@@ -104,7 +104,34 @@
   color: #003302;
 }
 
-.status-message.danger {
-  background-color: #f44336; 
-  color: #360400; 
+@media (max-width: 768px) {
+  .contact {
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px 15px 50px 15px;
+  }
+  
+  .contact h2 {
+    font-size: 35px;
+  }
+  
+  .contact form input, .contact form textarea {
+    padding: 12px 20px;
+    font-size: 16px;
+    margin: 10px auto 15px auto;
+    max-width: 100%;
+  }
+  
+  .contact .container {
+    max-width: 100%;
+    padding: 0;
+  }
+  
+  .contact .row {
+    margin: 0;
+  }
+  
+  .contact .col {
+    padding: 0 5px;
+  }
 }

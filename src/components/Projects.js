@@ -1,8 +1,10 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
+import { DrawingsMosaic } from "./DrawingsMosaic";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import { applications, games, drawings } from "../data/projectsData"; // Atualize o caminho conforme necessário
+import { applications, games } from "../data/projectsData";
+import { drawings } from "../data/DrawingsData";
 import "../styles/Project.css";
 
 function Projects() {
@@ -18,7 +20,7 @@ function Projects() {
                     <h2>Projects</h2>
                     <p></p>
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                      <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                      <Nav variant="pills" className="nav-pills mb-4 justify-content-center align-items-center" id="pills-tab">
                         <Nav.Item>
                           <Nav.Link eventKey="first" id="softwares">Applications</Nav.Link>
                         </Nav.Item>
@@ -33,7 +35,7 @@ function Projects() {
                         <Tab.Pane eventKey="first">
                           <Row>
                             {applications.map((card, index) => (
-                              <Col key={index} sm={12} md={12}>
+                              <Col key={index} xs={12} lg={6}>
                                <ProjectCard {...card} />
                               </Col>
                             ))}
@@ -42,7 +44,7 @@ function Projects() {
                         <Tab.Pane eventKey="second">
                           <Row>
                             {games.map((card, index) => (
-                              <Col key={index} sm={12} md={12}>
+                              <Col key={index} xs={12} lg={6}>
                                <ProjectCard {...card} />
                               </Col>
                             ))}
@@ -50,15 +52,27 @@ function Projects() {
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">
                           <Row>
-                          <h1 style={{ padding: '50px', textAlign: 'center' }}>
-                            {'<Coming soon: This section is still under development. Stay tuned!>'}
-                          </h1>
-
-                            {drawings.map((card, index) => (
-                              <Col key={index} sm={12} md={12}>
-                               <ProjectCard {...card} />
-                              </Col>
-                            ))}
+                            <Col size={12}>
+                              {drawings.length > 0 ? (
+                                <>
+                                  <div className="drawings-instruction">
+                                    <p className="instruction-text">
+                                      Click on any image to view details and learn more about each artwork
+                                    </p>
+                                  </div>
+                                  <DrawingsMosaic drawings={drawings} />
+                                </>
+                              ) : (
+                                <div style={{ padding: '50px', textAlign: 'center' }}>
+                                  <h3 style={{ color: 'rgba(255,255,255,0.7)' }}>
+                                    {'<Coming soon: This section is still under development. Stay tuned!>'}
+                                  </h3>
+                                  <p style={{ color: 'rgba(255,255,255,0.5)', marginTop: '20px' }}>
+                                    Adicione suas imagens na pasta src/assets/drawings para ver o mosaico em ação!
+                                  </p>
+                                </div>
+                              )}
+                            </Col>
                           </Row>
                         </Tab.Pane>
                       </Tab.Content>

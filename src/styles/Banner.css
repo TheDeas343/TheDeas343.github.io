@@ -35,8 +35,11 @@
   font-size: 65px;
   font-weight: 700;
   letter-spacing: 0.8px;
-  line-height: 1;
+  line-height: 1.1;
   margin-bottom: 20px;
+  max-width: 100%;
+  word-wrap: break-word;
+  white-space: normal;
 }
 .banner p {
   color: #B8B8B8;
@@ -71,6 +74,11 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  line-height: 1.1;
 }
 
 .name-banner{
@@ -90,8 +98,34 @@
   
   }
   
+  .banner h1 {
+    font-size: 50px;
+  }
+  
+  .txt-rotate {
+    font-size: 70px;
+  }
+  
   .rotate-div{
     padding-top:130px;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner h1 {
+    font-size: 40px;
+  }
+  
+  .txt-rotate {
+    font-size: 55px;
+  }
+  
+  .banner {
+    padding: 200px 0 150px 0;
+  }
+  
+  .filtro {
+    background-position: 50% 50%;
   }
 }
 
